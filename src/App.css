@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main_body{
   display: flex;
   flex-direction: column;
+}
+
+.top_bg_header{
+  height: 300px;
+  width: 100vw;
+  background-color: #bbb;
+}
+
+.header_profile_image{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: beige;
+  position: absolute;
+  transform: translateY(-50%);
+  left: 50px;
+}
+
+.tag_and_name{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: absolute;
+  transform: translateY(-100%);
+  left: 250px;
+}
+
+.heaading_tags{
+  display: flex;
+}
+
+.heaading_tags .tag_1{
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin-right: 2rem;
+  padding: 10px;
+  color: #fff;
+  background-color: rgb(127, 127, 251);
   align-items: center;
+}
+
+.heaading_tags .tag_2{
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin-right: 2rem;
+  padding: 10px;
+  color: #000;
+  background-color: #fff;
+}
+
+.customer_name{
+  font-size: 2rem;
+  color: #fff;
+}
+
+.header_contact_info{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: absolute;
+  /* transform: translateY(-100%); */
+  left: 250px;
+}
+
+.header_contact_info div{
+  display: flex;
+  margin-right: 1rem;
+}
+
+.phone_loc{
+  display: flex;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.phone_loc div{
+  display: flex;
+  margin-right: 1rem;
+}
+
+
+/* section 2 */
+
+.switchable_tab{
+  /* margin-top: 8rem; */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 10rem;
 }
 
-.App-link {
-  color: #61dafb;
+.all_tabs{
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.all_tabs .tab{
+  margin-right: 1rem;
+}
+
+.tab_content{
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+}
+
+.left_text{
+  margin-right: 2rem;
+  width: 50%;
+}
+
+.map_design{
+  width: 200px;
+  height: 100%;
+  background-color: #bbb;
 }
